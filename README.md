@@ -91,3 +91,47 @@ This project involves creating a Java program to model a toll system. The system
 - Truck, license plate: TRK456, 4 axles  
 
 **Output:**  
+
+
+```mermaid
+classDiagram
+    class Vehicle {
+        <<abstract>>
+        - licensePlate : String
+        + Vehicle(licensePlate : String)
+        + getLicensePlate() : String
+        + calculateToll() : int
+    }
+
+    class Car {
+        + Car(licensePlate : String)
+        + calculateToll() : int
+    }
+
+    class Motorcycle {
+        + Motorcycle(licensePlate : String)
+        + calculateToll() : int
+    }
+
+    class Truck {
+        - axles : int
+        + Truck(licensePlate : String, axles : int)
+        + getAxles() : int
+        + calculateToll() : int
+    }
+
+    class TollStation {
+        - name : String
+        - city : String
+        - totalCollected : int
+        - vehicles : List~Vehicle~
+        + TollStation(name : String, city : String)
+        + addVehicle(vehicle : Vehicle) : void
+        + getTotalCollected() : int
+        + printSummary() : void
+    }
+
+    Vehicle <|-- Car
+    Vehicle <|-- Motorcycle
+    Vehicle <|-- Truck
+    TollStation "1" --> "0..*" Vehicle
