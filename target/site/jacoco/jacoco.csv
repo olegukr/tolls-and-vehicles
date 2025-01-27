@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+tolls-and-vehicles,org.factoriaf5,TollStation,120,0,2,0,20,0,5,0,4,0
+tolls-and-vehicles,org.factoriaf5,Vehicle,9,0,0,0,4,0,2,0,2,0
+tolls-and-vehicles,org.factoriaf5,Truck,15,0,0,0,5,0,3,0,3,0
+tolls-and-vehicles,org.factoriaf5,Motorcycle,6,0,0,0,3,0,2,0,2,0
+tolls-and-vehicles,org.factoriaf5,Car,6,0,0,0,3,0,2,0,2,0
+tolls-and-vehicles,org.factoriaf5,App,50,0,0,0,7,0,1,0,1,0
