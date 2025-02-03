@@ -1,0 +1,45 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.iws
+*.swp
+.DS_Store
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# Avoid ignoring maven wrapper jar file (.mvn/wrapper folder excluded)
+!.mvn/wrapper/maven-wrapper.jar
+
+# Spring Boot
+**/target/
+**/target-eclipse/
+**/target-intellij/
+**/target-netbeans/
+**/target-idea/
+**/target-vscode/
+**/target-eclipse/
+**/logs/
+**/logs/**
+
+# IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
